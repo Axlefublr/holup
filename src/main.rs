@@ -15,6 +15,6 @@ trait FromDaysable {
 
 impl FromDaysable for Duration {
     fn from_days(days: u64) -> Self {
-        Duration::from_secs(SECONDS_IN_DAY)
+        Duration::from_secs(SECONDS_IN_DAY * days)
     }
 }
