@@ -1,3 +1,0 @@
-You can now install this infinite loop program
-using `cargo-binstall` / `cargo-quickinstall`
-You are absolutely welcome
