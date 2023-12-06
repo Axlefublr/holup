@@ -40,3 +40,17 @@ Maybe you have info in one tab, and want to cross reference it in another tab / 
 Tiling tabs / windows would often be an overreaction for this type of task, especially if it's just some bits and pieces of information, that may even be in different places!
 
 If you wanna see this "feature" in action, I use it extensively in the latter half of this stream I did: https://youtube.com/live/PY7KAG3Qdb4
+
+# Install
+
+```
+cargo install holup
+```
+
+`cargo-binstall` and `cargo-quickinstall` are also supported. Yes I do also find it hilarious.
+
+# Uninstall
+
+```
+cargo uninstall holup
+```
