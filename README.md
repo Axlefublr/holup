@@ -41,6 +41,10 @@ Tiling tabs / windows would often be an overreaction for this type of task, espe
 
 If you wanna see this "feature" in action, I use it extensively in the latter half of this stream I did: https://youtube.com/live/PY7KAG3Qdb4
 
+One useful feature I've been omitting mentioning: you can specify the initial text via arguments. Every argument is concatenated with a space in between.
+
+Using those, you can make your stdin session start with some text. Keep, in mind, you can't delete it like that, as opposed to you typing it in yourself.
+
 # Install
 
 ```
