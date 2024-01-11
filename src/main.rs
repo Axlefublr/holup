@@ -1,7 +1,24 @@
+use std::env;
+use std::io;
+use std::io::Read;
+use std::io::Write;
 use std::thread;
 use std::time::Duration;
 
 fn main() {
+    let args = env::args().skip(1).collect::<Vec<String>>().join(" ");
+    let mut stdin = String::new();
+    io::stdin().lock().read_to_string(&mut stdin).unwrap();
+    let stdin = stdin.trim_end();
+    let stdin = if stdin.is_empty() {
+        Default::default()
+    } else {
+        let mut stdin = stdin.to_owned();
+        stdin.push(' ');
+        stdin
+    };
+    print!("{stdin}{args}");
+    io::stdout().flush().unwrap();
     loop {
         thread::sleep(Duration::from_days(1));
     }
